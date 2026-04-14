@@ -2,7 +2,7 @@ function comprar(productId) {
   const email = prompt("Digite seu e-mail para receber o material:");
   if (!email) return;
 
-  fetch("http://localhost:3000/create-payment", {
+fetch("https://easycred-backend.up.railway.app/create-payment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
